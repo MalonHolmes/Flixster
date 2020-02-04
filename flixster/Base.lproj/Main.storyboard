@@ -166,28 +166,32 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4n9-tn-YxP">
-                                    <size key="itemSize" width="176" height="197"/>
+                                    <size key="itemSize" width="200" height="250"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="MovieGridCell" id="DSz-77-E4G" customClass="MovieGridCell" customModule="flixster" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="176" height="197"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7Yk-xF-Rb0">
-                                            <rect key="frame" x="0.0" y="0.0" width="176" height="197"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="MovieGridCell" id="W7U-eC-JdB" customClass="MovieGridCell" customModule="flixster" customModuleProvider="target">
+                                        <rect key="frame" x="87.5" y="0.0" width="200" height="250"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UB6-G6-8K5">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8bT-V5-kNN">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yf5-IE-6xp">
                                                     <rect key="frame" x="0.0" y="0.0" width="176" height="197"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Yf5-IE-6xp" firstAttribute="leadingMargin" secondItem="UB6-G6-8K5" secondAttribute="leading" id="8dR-mt-E1z"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Yf5-IE-6xp" secondAttribute="bottom" id="OsL-cR-CQq"/>
+                                                <constraint firstItem="Yf5-IE-6xp" firstAttribute="topMargin" secondItem="UB6-G6-8K5" secondAttribute="top" id="ZhW-iD-t4X"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Yf5-IE-6xp" secondAttribute="trailing" id="dve-7K-d5l"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="176" height="197"/>
                                         <connections>
-                                            <outlet property="posterView" destination="8bT-V5-kNN" id="ChE-Y0-P1P"/>
+                                            <outlet property="posterView" destination="Yf5-IE-6xp" id="wAN-mc-f9s"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
